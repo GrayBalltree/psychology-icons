@@ -1,0 +1,596 @@
+[
+ {
+  "slug": "brain",
+  "zh": "大脑",
+  "cat": "神经科学基础",
+  "path": "original-hd/brain.png"
+ },
+ {
+  "slug": "neuron",
+  "zh": "神经元",
+  "cat": "神经科学基础",
+  "path": "original-hd/neuron.png"
+ },
+ {
+  "slug": "synapse",
+  "zh": "突触",
+  "cat": "神经科学基础",
+  "path": "original-hd/synapse.png"
+ },
+ {
+  "slug": "brain-regions",
+  "zh": "脑区",
+  "cat": "神经科学基础",
+  "path": "original-hd/brain-regions.png"
+ },
+ {
+  "slug": "hemispheres",
+  "zh": "大脑半球",
+  "cat": "神经科学基础",
+  "path": "original-hd/hemispheres.png"
+ },
+ {
+  "slug": "cerebellum",
+  "zh": "小脑",
+  "cat": "神经科学基础",
+  "path": "original-hd/cerebellum.png"
+ },
+ {
+  "slug": "brainstem",
+  "zh": "脑干",
+  "cat": "神经科学基础",
+  "path": "original-hd/brainstem.png"
+ },
+ {
+  "slug": "limbic",
+  "zh": "边缘系统",
+  "cat": "神经科学基础",
+  "path": "original-hd/limbic.png"
+ },
+ {
+  "slug": "myelin",
+  "zh": "髓鞘(白质)",
+  "cat": "神经科学基础",
+  "path": "original-hd/myelin.png"
+ },
+ {
+  "slug": "glia",
+  "zh": "胶质细胞(星形胶质/小胶质)",
+  "cat": "神经科学基础",
+  "path": "original-hd/glia.png"
+ },
+ {
+  "slug": "neurogenesis",
+  "zh": "神经发生(神经新生)",
+  "cat": "神经科学基础",
+  "path": "original-hd/neurogenesis.png"
+ },
+ {
+  "slug": "activation",
+  "zh": "脑激活(fMRI)",
+  "cat": "脑功能与网络",
+  "path": "original-hd/activation.png"
+ },
+ {
+  "slug": "functional-connectivity",
+  "zh": "功能连接",
+  "cat": "脑功能与网络",
+  "path": "original-hd/functional-connectivity.png"
+ },
+ {
+  "slug": "structural-connectivity",
+  "zh": "结构连接(DTI)",
+  "cat": "脑功能与网络",
+  "path": "original-hd/structural-connectivity.png"
+ },
+ {
+  "slug": "dmn",
+  "zh": "默认模式网络(DMN)",
+  "cat": "脑功能与网络",
+  "path": "original-hd/dmn.png"
+ },
+ {
+  "slug": "brainwaves",
+  "zh": "脑电波(δθαβγ)",
+  "cat": "脑功能与网络",
+  "path": "original-hd/brainwaves.png"
+ },
+ {
+  "slug": "topomap",
+  "zh": "脑地形图",
+  "cat": "脑功能与网络",
+  "path": "original-hd/topomap.png"
+ },
+ {
+  "slug": "reward",
+  "zh": "奖赏系统(多巴胺通路)",
+  "cat": "脑功能与网络",
+  "path": "original-hd/reward.png"
+ },
+ {
+  "slug": "eeg",
+  "zh": "脑电图(EEG)",
+  "cat": "神经影像与调控技术",
+  "path": "original-hd/eeg.png"
+ },
+ {
+  "slug": "meg",
+  "zh": "脑磁图(MEG)",
+  "cat": "神经影像与调控技术",
+  "path": "original-hd/meg.png"
+ },
+ {
+  "slug": "fmri",
+  "zh": "功能磁共振(fMRI)",
+  "cat": "神经影像与调控技术",
+  "path": "original-hd/fmri.png"
+ },
+ {
+  "slug": "pet",
+  "zh": "正电子发射断层(PET)",
+  "cat": "神经影像与调控技术",
+  "path": "original-hd/pet.png"
+ },
+ {
+  "slug": "tms",
+  "zh": "经颅磁刺激(TMS)",
+  "cat": "神经影像与调控技术",
+  "path": "original-hd/tms.png"
+ },
+ {
+  "slug": "tdcs",
+  "zh": "经颅直流电刺激(tDCS)",
+  "cat": "神经影像与调控技术",
+  "path": "original-hd/tdcs.png"
+ },
+ {
+  "slug": "fnirs",
+  "zh": "近红外光谱(fNIRS)",
+  "cat": "神经影像与调控技术",
+  "path": "original-hd/fnirs.png"
+ },
+ {
+  "slug": "single-cell",
+  "zh": "单细胞记录",
+  "cat": "神经影像与调控技术",
+  "path": "original-hd/single-cell.png"
+ },
+ {
+  "slug": "dopamine",
+  "zh": "多巴胺(奖赏与动机)",
+  "cat": "神经化学与脑健康",
+  "path": "original-hd/dopamine.png"
+ },
+ {
+  "slug": "serotonin",
+  "zh": "血清素(情绪与睡眠)",
+  "cat": "神经化学与脑健康",
+  "path": "original-hd/serotonin.png"
+ },
+ {
+  "slug": "glutamate",
+  "zh": "谷氨酸(兴奋性)",
+  "cat": "神经化学与脑健康",
+  "path": "original-hd/glutamate.png"
+ },
+ {
+  "slug": "gaba",
+  "zh": "GABA(抑制性)",
+  "cat": "神经化学与脑健康",
+  "path": "original-hd/gaba.png"
+ },
+ {
+  "slug": "ltp",
+  "zh": "长时程增强(LTP)",
+  "cat": "神经化学与脑健康",
+  "path": "original-hd/ltp.png"
+ },
+ {
+  "slug": "ltd",
+  "zh": "长时程抑制(LTD)",
+  "cat": "神经化学与脑健康",
+  "path": "original-hd/ltd.png"
+ },
+ {
+  "slug": "neuroinflammation",
+  "zh": "神经炎症",
+  "cat": "神经化学与脑健康",
+  "path": "original-hd/neuroinflammation.png"
+ },
+ {
+  "slug": "neurodegeneration",
+  "zh": "神经退行性变(如阿尔茨海默病)",
+  "cat": "神经化学与脑健康",
+  "path": "original-hd/neurodegeneration.png"
+ },
+ {
+  "slug": "brain-injury",
+  "zh": "脑损伤(如TBI/中风)",
+  "cat": "神经化学与脑健康",
+  "path": "original-hd/brain-injury.png"
+ },
+ {
+  "slug": "cognition",
+  "zh": "认知加工",
+  "cat": "认知过程",
+  "path": "original-hd/cognition.png"
+ },
+ {
+  "slug": "attention",
+  "zh": "注意",
+  "cat": "认知过程",
+  "path": "original-hd/attention.png"
+ },
+ {
+  "slug": "memory",
+  "zh": "记忆",
+  "cat": "认知过程",
+  "path": "original-hd/memory.png"
+ },
+ {
+  "slug": "learning",
+  "zh": "学习",
+  "cat": "认知过程",
+  "path": "original-hd/learning.png"
+ },
+ {
+  "slug": "decision",
+  "zh": "决策",
+  "cat": "认知过程",
+  "path": "original-hd/decision.png"
+ },
+ {
+  "slug": "problem-solving",
+  "zh": "问题解决",
+  "cat": "认知过程",
+  "path": "original-hd/problem-solving.png"
+ },
+ {
+  "slug": "goal-directed",
+  "zh": "目标导向",
+  "cat": "认知过程",
+  "path": "original-hd/goal-directed.png"
+ },
+ {
+  "slug": "emotion",
+  "zh": "情绪",
+  "cat": "情绪与情感",
+  "path": "original-hd/emotion.png"
+ },
+ {
+  "slug": "happiness",
+  "zh": "幸福感",
+  "cat": "情绪与情感",
+  "path": "original-hd/happiness.png"
+ },
+ {
+  "slug": "sadness",
+  "zh": "悲伤",
+  "cat": "情绪与情感",
+  "path": "original-hd/sadness.png"
+ },
+ {
+  "slug": "anger",
+  "zh": "愤怒",
+  "cat": "情绪与情感",
+  "path": "original-hd/anger.png"
+ },
+ {
+  "slug": "fear",
+  "zh": "恐惧",
+  "cat": "情绪与情感",
+  "path": "original-hd/fear.png"
+ },
+ {
+  "slug": "emotion-regulation",
+  "zh": "情绪调节",
+  "cat": "情绪与情感",
+  "path": "original-hd/emotion-regulation.png"
+ },
+ {
+  "slug": "depression",
+  "zh": "抑郁",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/depression.png"
+ },
+ {
+  "slug": "anxiety",
+  "zh": "焦虑",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/anxiety.png"
+ },
+ {
+  "slug": "stress",
+  "zh": "压力",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/stress.png"
+ },
+ {
+  "slug": "sleep-disorder",
+  "zh": "睡眠障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/sleep-disorder.png"
+ },
+ {
+  "slug": "mood-disorder",
+  "zh": "情绪障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/mood-disorder.png"
+ },
+ {
+  "slug": "ptsd",
+  "zh": "创伤后应激(PTSD)",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/ptsd.png"
+ },
+ {
+  "slug": "self-awareness",
+  "zh": "自我认知",
+  "cat": "自我与人格",
+  "path": "original-hd/self-awareness.png"
+ },
+ {
+  "slug": "self-esteem",
+  "zh": "自尊",
+  "cat": "自我与人格",
+  "path": "original-hd/self-esteem.png"
+ },
+ {
+  "slug": "self-efficacy",
+  "zh": "自我效能感",
+  "cat": "自我与人格",
+  "path": "original-hd/self-efficacy.png"
+ },
+ {
+  "slug": "personality",
+  "zh": "人格特质",
+  "cat": "自我与人格",
+  "path": "original-hd/personality.png"
+ },
+ {
+  "slug": "identity",
+  "zh": "身份认同",
+  "cat": "自我与人格",
+  "path": "original-hd/identity.png"
+ },
+ {
+  "slug": "social-support",
+  "zh": "社会支持",
+  "cat": "社会与人际",
+  "path": "original-hd/social-support.png"
+ },
+ {
+  "slug": "communication",
+  "zh": "沟通",
+  "cat": "社会与人际",
+  "path": "original-hd/communication.png"
+ },
+ {
+  "slug": "attachment",
+  "zh": "依恋",
+  "cat": "社会与人际",
+  "path": "original-hd/attachment.png"
+ },
+ {
+  "slug": "trust",
+  "zh": "信任",
+  "cat": "社会与人际",
+  "path": "original-hd/trust.png"
+ },
+ {
+  "slug": "interpersonal",
+  "zh": "人际关系",
+  "cat": "社会与人际",
+  "path": "original-hd/interpersonal.png"
+ },
+ {
+  "slug": "belonging",
+  "zh": "社会归属",
+  "cat": "社会与人际",
+  "path": "original-hd/belonging.png"
+ },
+ {
+  "slug": "cross-cultural",
+  "zh": "跨文化心理",
+  "cat": "跨文化心理",
+  "path": "original-hd/cross-cultural.png"
+ },
+ {
+  "slug": "cultural-differences",
+  "zh": "文化差异",
+  "cat": "跨文化心理",
+  "path": "original-hd/cultural-differences.png"
+ },
+ {
+  "slug": "cultural-sensitivity",
+  "zh": "文化敏感性",
+  "cat": "跨文化心理",
+  "path": "original-hd/cultural-sensitivity.png"
+ },
+ {
+  "slug": "cultural-values",
+  "zh": "文化价值观",
+  "cat": "跨文化心理",
+  "path": "original-hd/cultural-values.png"
+ },
+ {
+  "slug": "acculturation",
+  "zh": "文化适应",
+  "cat": "跨文化心理",
+  "path": "original-hd/acculturation.png"
+ },
+ {
+  "slug": "intercultural-communication",
+  "zh": "跨文化沟通",
+  "cat": "跨文化心理",
+  "path": "original-hd/intercultural-communication.png"
+ },
+ {
+  "slug": "resilience",
+  "zh": "心理弹性",
+  "cat": "积极心理",
+  "path": "original-hd/resilience.png"
+ },
+ {
+  "slug": "motivation",
+  "zh": "动力/动机",
+  "cat": "积极心理",
+  "path": "original-hd/motivation.png"
+ },
+ {
+  "slug": "growth-mindset",
+  "zh": "成长型思维",
+  "cat": "积极心理",
+  "path": "original-hd/growth-mindset.png"
+ },
+ {
+  "slug": "hope",
+  "zh": "希望",
+  "cat": "积极心理",
+  "path": "original-hd/hope.png"
+ },
+ {
+  "slug": "mindfulness",
+  "zh": "正念",
+  "cat": "积极心理",
+  "path": "original-hd/mindfulness.png"
+ },
+ {
+  "slug": "self-compassion",
+  "zh": "自我关怀",
+  "cat": "积极心理",
+  "path": "original-hd/self-compassion.png"
+ },
+ {
+  "slug": "child-development",
+  "zh": "儿童发展",
+  "cat": "发展与生命周期",
+  "path": "original-hd/child-development.png"
+ },
+ {
+  "slug": "adolescent-development",
+  "zh": "青少年发展",
+  "cat": "发展与生命周期",
+  "path": "original-hd/adolescent-development.png"
+ },
+ {
+  "slug": "adult-development",
+  "zh": "成人发展",
+  "cat": "发展与生命周期",
+  "path": "original-hd/adult-development.png"
+ },
+ {
+  "slug": "aging",
+  "zh": "老年心理",
+  "cat": "发展与生命周期",
+  "path": "original-hd/aging.png"
+ },
+ {
+  "slug": "lifespan",
+  "zh": "生命周期",
+  "cat": "发展与生命周期",
+  "path": "original-hd/lifespan.png"
+ },
+ {
+  "slug": "cognitive-aging",
+  "zh": "衰老与认知",
+  "cat": "发展与生命周期",
+  "path": "original-hd/cognitive-aging.png"
+ },
+ {
+  "slug": "assessment",
+  "zh": "心理评估",
+  "cat": "心理评估与测量",
+  "path": "original-hd/assessment.png"
+ },
+ {
+  "slug": "measurement",
+  "zh": "心理测量",
+  "cat": "心理评估与测量",
+  "path": "original-hd/measurement.png"
+ },
+ {
+  "slug": "cognitive-testing",
+  "zh": "认知测评",
+  "cat": "心理评估与测量",
+  "path": "original-hd/cognitive-testing.png"
+ },
+ {
+  "slug": "scales",
+  "zh": "量表",
+  "cat": "心理评估与测量",
+  "path": "original-hd/scales.png"
+ },
+ {
+  "slug": "data-analysis",
+  "zh": "数据分析",
+  "cat": "心理评估与测量",
+  "path": "original-hd/data-analysis.png"
+ },
+ {
+  "slug": "counseling",
+  "zh": "心理咨询",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/counseling.png"
+ },
+ {
+  "slug": "psychotherapy",
+  "zh": "心理治疗",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/psychotherapy.png"
+ },
+ {
+  "slug": "cbt",
+  "zh": "认知行为疗法(CBT)",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/cbt.png"
+ },
+ {
+  "slug": "psychoanalysis",
+  "zh": "精神分析",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/psychoanalysis.png"
+ },
+ {
+  "slug": "behavior-therapy",
+  "zh": "行为疗法",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/behavior-therapy.png"
+ },
+ {
+  "slug": "humanistic",
+  "zh": "人本主义",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/humanistic.png"
+ },
+ {
+  "slug": "family-therapy",
+  "zh": "家庭治疗",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/family-therapy.png"
+ },
+ {
+  "slug": "act",
+  "zh": "接纳承诺疗法 (ACT)",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/act.png"
+ },
+ {
+  "slug": "dbt",
+  "zh": "辩证行为疗法 (DBT)",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/dbt.png"
+ },
+ {
+  "slug": "group-therapy",
+  "zh": "团体辅导",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/group-therapy.png"
+ },
+ {
+  "slug": "mbsr",
+  "zh": "正念疗法(MBSR)",
+  "cat": "心理咨询与治疗",
+  "path": "original-hd/mbsr.png"
+ }
+]

@@ -30,3 +30,21 @@ https://grayballtree.github.io/psychology-icons/
 | 心理学名家 | 8 |
 | 心理咨询与治疗 | 11 |
 | ZJU NOBEL | 45 |
+
+## 维护：新增图标
+
+仓库根目录有一键脚本 `add-icon.py`（需要 python3 + Pillow）：
+
+```bash
+# 常规图标（非正方形自动透明补边，不裁内容）
+python3 add-icon.py --slug attention --zh 注意 --cat 认知过程 --img ~/Downloads/注意.png
+
+# 肖像类（居中裁剪）
+python3 add-icon.py --slug nobel-46 --zh "NOBEL 46" --cat "ZJU NOBEL" --img 46.jpeg --fit crop
+
+# 加 --push 自动提交并推送（Pages 1-2 分钟后自动部署）
+python3 add-icon.py --slug xxx --zh 某某 --cat 某分类 --img 某图.png --push
+```
+
+脚本会自动：处理图片为 512×512 PNG（保留透明背景）→ 写入 manifest2.json →
+生成 256px WebP 缩略图 → 更新本 README 的统计与分类表。

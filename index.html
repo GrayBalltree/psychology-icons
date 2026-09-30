@@ -136,7 +136,7 @@
 
 <script>
 let DATA=[], curCat="全部", curQ="", curItem=null, curPath=null;
-const thumb=p=>p.replace("original-hd/","thumbs/").replace(/\.png$/,".webp");
+const thumb=p=>p.replace("original-hd/","thumbs/").replace(/\.png$/,".webp")+"?v=2";
 
 fetch("manifest2.json").then(r=>r.json()).then(data=>{
   DATA=data;

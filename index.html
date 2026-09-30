@@ -84,6 +84,32 @@
   #toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 20px;border-radius:10px;font-size:13.5px;opacity:0;transition:opacity .25s;pointer-events:none;z-index:99}
   footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:12.5px}
 </style>
+<script>
+/* ===== 访问统计（默认关闭，填写以下配置即启用）=====
+   模式一 · 自托管/通用端点：把 ANALYTICS_ENDPOINT 设为接收 POST(application/json) 的地址；
+   模式二 · Umami Cloud：填 UMAMI_SRC（如 https://cloud.umami.is/script.js）与 UMAMI_WEBSITE_ID。*/
+const ANALYTICS_ENDPOINT="";
+const UMAMI_SRC="https://cloud.umami.is/script.js", UMAMI_WEBSITE_ID="3c3e8839-bb14-4d2a-a12d-9466310a9afa";
+let umamiReady=null;
+if(UMAMI_SRC&&UMAMI_WEBSITE_ID){
+  umamiReady=new Promise(res=>{
+    const s=document.createElement("script");
+    s.src=UMAMI_SRC; s.setAttribute("data-website-id",UMAMI_WEBSITE_ID);
+    s.onload=res; document.head.appendChild(s);
+  });
+}
+function track(event,data={}){
+  try{
+    if(umamiReady) umamiReady.then(()=>{ if(window.umami) window.umami.track(event,data); });
+    if(ANALYTICS_ENDPOINT){
+      const payload=JSON.stringify({event,data,page:location.pathname,ts:new Date().toISOString()});
+      fetch(ANALYTICS_ENDPOINT,{method:"POST",body:payload,headers:{"Content-Type":"application/json"},keepalive:true}).catch(()=>{
+        try{ navigator.sendBeacon(ANALYTICS_ENDPOINT,new Blob([payload],{type:"application/json"})); }catch(_){}
+      });
+    }
+  }catch(e){}
+}
+</script>
 </head>
 <body>
 <header>
@@ -140,6 +166,7 @@ const thumb=p=>p.replace("original-hd/","thumbs/").replace(/\.png$/,".webp")+"?v
 
 fetch("manifest2.json").then(r=>r.json()).then(data=>{
   DATA=data;
+  track("load",{icons:data.length});
   const cats=[...new Set(data.map(d=>d.cat))];
   const counts={};
   data.forEach(d=>counts[d.cat]=(counts[d.cat]||0)+1);
@@ -236,6 +263,7 @@ function render(){
 
 function openPanel(d){
   curItem=d; curPath=d.path;
+  track("view",{slug:d.slug,cat:d.cat});
   document.getElementById("p-preview").innerHTML=`<img src="${d.path}">`;
   document.getElementById("p-title").textContent=d.zh;
   document.getElementById("p-meta").textContent=`${d.cat} · ${d.path}`;
@@ -259,6 +287,7 @@ document.getElementById("p-close").onclick=()=>document.getElementById("overlay"
 document.getElementById("overlay").onclick=e=>{if(e.target.id==="overlay")e.target.classList.remove("show");};
 
 async function copyPNG(d,path){
+  track("copy",{slug:d.slug,cat:d.cat});
   try{
     const r = await fetch(path||d.path);
     const blob = await r.blob();
@@ -268,6 +297,7 @@ async function copyPNG(d,path){
 }
 document.getElementById("p-copy").onclick=()=>copyPNG(curItem,curPath);
 function downloadPNG(d,path){
+  track("download",{slug:d.slug,cat:d.cat});
   const a=document.createElement("a");
   a.href=path||d.path; a.download=d.slug+".png"; a.click();
   toast("已开始下载 "+d.slug+".png");

@@ -328,6 +328,54 @@
   "path": "original-hd/ptsd.png"
  },
  {
+  "slug": "neurodevelopmental",
+  "zh": "神经发育障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/neurodevelopmental.png"
+ },
+ {
+  "slug": "bipolar",
+  "zh": "双相及相关障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/bipolar.png"
+ },
+ {
+  "slug": "ocd",
+  "zh": "强迫及相关障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/ocd.png"
+ },
+ {
+  "slug": "eating-disorder",
+  "zh": "进食障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/eating-disorder.png"
+ },
+ {
+  "slug": "substance-use",
+  "zh": "物质使用与成瘾障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/substance-use.png"
+ },
+ {
+  "slug": "personality-disorder",
+  "zh": "人格障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/personality-disorder.png"
+ },
+ {
+  "slug": "neurocognitive",
+  "zh": "神经认知障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/neurocognitive.png"
+ },
+ {
+  "slug": "dissociative",
+  "zh": "分离障碍",
+  "cat": "心理健康与障碍",
+  "path": "original-hd/dissociative.png"
+ },
+ {
   "slug": "self-awareness",
   "zh": "自我认知",
   "cat": "自我与人格",
@@ -556,6 +604,54 @@
   "path": "original-hd/hci.png"
  },
  {
+  "slug": "freud",
+  "zh": "弗洛伊德",
+  "cat": "心理学名家",
+  "path": "original-hd/freud.png"
+ },
+ {
+  "slug": "wundt",
+  "zh": "冯特",
+  "cat": "心理学名家",
+  "path": "original-hd/wundt.png"
+ },
+ {
+  "slug": "watson",
+  "zh": "华生",
+  "cat": "心理学名家",
+  "path": "original-hd/watson.png"
+ },
+ {
+  "slug": "rogers",
+  "zh": "罗杰斯",
+  "cat": "心理学名家",
+  "path": "original-hd/rogers.png"
+ },
+ {
+  "slug": "skinner",
+  "zh": "斯金纳",
+  "cat": "心理学名家",
+  "path": "original-hd/skinner.png"
+ },
+ {
+  "slug": "piaget",
+  "zh": "皮亚杰",
+  "cat": "心理学名家",
+  "path": "original-hd/piaget.png"
+ },
+ {
+  "slug": "maslow",
+  "zh": "马斯洛",
+  "cat": "心理学名家",
+  "path": "original-hd/maslow.png"
+ },
+ {
+  "slug": "bandura",
+  "zh": "班杜拉",
+  "cat": "心理学名家",
+  "path": "original-hd/bandura.png"
+ },
+ {
   "slug": "counseling",
   "zh": "心理咨询",
   "cat": "心理咨询与治疗",
@@ -620,5 +716,11 @@
   "zh": "正念疗法(MBSR)",
   "cat": "心理咨询与治疗",
   "path": "original-hd/mbsr.png"
+ },
+ {
+  "slug": "structural-mri",
+  "zh": "脑结构影像(MRI)",
+  "cat": "神经影像与调控技术",
+  "path": "original-hd/structural-mri.png"
  }
 ]

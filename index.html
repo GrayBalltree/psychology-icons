@@ -15,9 +15,36 @@
   .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
   header h1{font-size:25px;letter-spacing:1px}
   .toolbar{position:sticky;top:0;z-index:20;background:rgba(246,248,251,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:13px 0}
-  .toolbar .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-  #search{flex:1;min-width:200px;padding:10px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:14px;outline:none;background:#fff;color:var(--ink)}
-  #search:focus{border-color:var(--blue)}
+  .toolbar .wrap{display:flex;gap:10px;align-items:center}
+  #search,#search2{padding:10px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:14px;outline:none;background:#fff;color:var(--ink)}
+  #search{flex:none;width:220px}
+  #search:focus,#search2:focus{border-color:var(--blue)}
+  .chipwrap{position:relative;flex:1;min-width:0}
+  #chips{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;padding:2px 2px;scrollbar-width:none;-ms-overflow-style:none}
+  #chips::-webkit-scrollbar{display:none}
+  .chip{flex:none}
+  .edge{position:absolute;top:-2px;bottom:-2px;width:26px;pointer-events:none;z-index:2;opacity:0;transition:opacity .2s}
+  .edge.left{left:0;background:linear-gradient(90deg,#F6F8FB 30%,rgba(246,248,251,0))}
+  .edge.right{right:0;background:linear-gradient(-90deg,#F6F8FB 30%,rgba(246,248,251,0))}
+  .chipwrap.canleft .edge.left,.chipwrap.canright .edge.right{opacity:1}
+  @media(max-width:720px){
+    .toolbar .wrap{flex-wrap:wrap}
+    #search{width:100%}
+  }
+  /* 侧边栏（桌面端） */
+  .layout{display:flex;gap:26px;max-width:1340px;margin:0 auto;padding:0 24px}
+  #side{width:190px;flex:none;position:sticky;top:0;align-self:flex-start;max-height:100vh;overflow-y:auto;padding:22px 0 30px;display:none}
+  #side #search{width:100%;margin-bottom:14px}
+  #catlist{display:flex;flex-direction:column;gap:2px}
+  #catlist button{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;padding:7.5px 12px;border-radius:9px;border:none;background:none;font-size:13.5px;cursor:pointer;color:var(--ink);white-space:nowrap}
+  #catlist button:hover{background:#EDF3FA}
+  #catlist button.active{background:var(--ink);color:#fff}
+  #catlist .cnt{font-size:11px;opacity:.55;margin-left:8px}
+  @media(min-width:1100px){
+    .toolbar{display:none}
+    #side{display:block}
+  }
+  main.wrap{flex:1;min-width:0;max-width:none;margin:0;padding:26px 0 60px}
   .chip{padding:7px 13px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-size:12.5px;cursor:pointer;color:var(--ink);white-space:nowrap}
   .chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
   main{padding:26px 0 60px}
@@ -68,13 +95,23 @@
 <div class="toolbar">
   <div class="wrap">
     <input id="search" type="text" placeholder="搜索图标，如：正念、fMRI、工作记忆…">
-    <div id="chips" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+    <div class="chipwrap">
+      <div id="chips"></div>
+      <div class="edge left"></div>
+      <div class="edge right"></div>
+    </div>
   </div>
 </div>
 
-<main class="wrap">
-  <div id="main" style="margin-top:6px"></div>
-</main>
+<div class="layout">
+  <aside id="side">
+    <input id="search2" type="text" placeholder="搜索图标，如：正念、fMRI…">
+    <div id="catlist"></div>
+  </aside>
+  <main class="wrap">
+    <div id="main" style="margin-top:6px"></div>
+  </main>
+</div>
 
 <footer><div class="wrap">透明背景 PNG · 可直接粘贴到 PPT / Word · 点击图标可复制或下载单张</div></footer>
 
@@ -103,17 +140,55 @@ let DATA=[], curCat="全部", curQ="", curItem=null, curPath=null;
 fetch("manifest2.json").then(r=>r.json()).then(data=>{
   DATA=data;
   const cats=[...new Set(data.map(d=>d.cat))];
+  const counts={};
+  data.forEach(d=>counts[d.cat]=(counts[d.cat]||0)+1);
+  const setCat=(c)=>{
+    curCat=c;
+    document.querySelectorAll(".chip,#catlist button").forEach(x=>x.classList.toggle("active",x.dataset.cat===c));
+    const active=document.querySelector(".chip.active");
+    if(active)active.scrollIntoView({behavior:"smooth",inline:"center",block:"nearest"});
+    render();
+  };
   const chips=document.getElementById("chips");
   ["全部",...cats].forEach(c=>{
     const b=document.createElement("button");
-    b.className="chip"+(c==="全部"?" active":""); b.textContent=c;
-    b.onclick=()=>{curCat=c;document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));b.classList.add("active");render();};
+    b.className="chip"+(c==="全部"?" active":""); b.textContent=c; b.dataset.cat=c;
+    b.onclick=()=>setCat(c);
     chips.appendChild(b);
+  });
+  const catlist=document.getElementById("catlist");
+  ["全部",...cats].forEach(c=>{
+    const b=document.createElement("button");
+    b.className=c==="全部"?" active":""; b.dataset.cat=c;
+    b.innerHTML=`<span>${c}</span><span class="cnt">${c==="全部"?data.length:(counts[c]||0)}</span>`;
+    b.onclick=()=>setCat(c);
+    catlist.appendChild(b);
   });
   render();
 });
 
-document.getElementById("search").addEventListener("input",e=>{curQ=e.target.value.trim().toLowerCase();render();});
+function bindSearch(el){
+  el.addEventListener("input",e=>{curQ=e.target.value.trim().toLowerCase();
+    [document.getElementById("search"),document.getElementById("search2")].forEach(x=>{if(x&&x!==el)x.value=e.target.value;});
+    render();});
+}
+bindSearch(document.getElementById("search"));
+bindSearch(document.getElementById("search2"));
+
+const chipwrap=document.querySelector(".chipwrap");
+function updEdges(){
+  const max=chips.scrollWidth-chips.clientWidth;
+  chipwrap.classList.toggle("canleft", chips.scrollLeft>4);
+  chipwrap.classList.toggle("canright", chips.scrollLeft<max-4);
+}
+chips.addEventListener("scroll",updEdges);
+window.addEventListener("resize",updEdges);
+chips.addEventListener("wheel",e=>{
+  if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();chips.scrollLeft+=e.deltaY;}
+},{passive:false});
+updEdges();
+
+
 
 function render(){
   const main=document.getElementById("main"); main.innerHTML="";

@@ -156,28 +156,32 @@
   "path": "original-hd/single-cell.png"
  },
  {
-  "slug": "dopamine",
-  "zh": "多巴胺(奖赏与动机)",
+  "slug": "neurotransmitter",
+  "zh": "神经递质",
   "cat": "神经化学与脑健康",
-  "path": "original-hd/dopamine.png"
- },
- {
-  "slug": "serotonin",
-  "zh": "血清素(情绪与睡眠)",
-  "cat": "神经化学与脑健康",
-  "path": "original-hd/serotonin.png"
- },
- {
-  "slug": "glutamate",
-  "zh": "谷氨酸(兴奋性)",
-  "cat": "神经化学与脑健康",
-  "path": "original-hd/glutamate.png"
- },
- {
-  "slug": "gaba",
-  "zh": "GABA(抑制性)",
-  "cat": "神经化学与脑健康",
-  "path": "original-hd/gaba.png"
+  "path": "original-hd/dopamine.png",
+  "variants": [
+   {
+    "name": "蓝",
+    "color": "#8FD0F5",
+    "path": "original-hd/dopamine.png"
+   },
+   {
+    "name": "粉",
+    "color": "#F6B9AE",
+    "path": "original-hd/serotonin.png"
+   },
+   {
+    "name": "绿",
+    "color": "#7BD3AF",
+    "path": "original-hd/glutamate.png"
+   },
+   {
+    "name": "黄",
+    "color": "#F4C86A",
+    "path": "original-hd/gaba.png"
+   }
+  ]
  },
  {
   "slug": "ltp",
@@ -526,6 +530,30 @@
   "zh": "数据分析",
   "cat": "心理评估与测量",
   "path": "original-hd/data-analysis.png"
+ },
+ {
+  "slug": "computational-modeling",
+  "zh": "计算建模",
+  "cat": "计算与工程心理学",
+  "path": "original-hd/computational-modeling.png"
+ },
+ {
+  "slug": "ai-psychology",
+  "zh": "AI 心理学",
+  "cat": "计算与工程心理学",
+  "path": "original-hd/ai-psychology.png"
+ },
+ {
+  "slug": "engineering-psychology",
+  "zh": "工程心理学",
+  "cat": "计算与工程心理学",
+  "path": "original-hd/engineering-psychology.png"
+ },
+ {
+  "slug": "hci",
+  "zh": "人机交互",
+  "cat": "计算与工程心理学",
+  "path": "original-hd/hci.png"
  },
  {
   "slug": "counseling",

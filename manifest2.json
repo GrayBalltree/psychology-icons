@@ -150,86 +150,86 @@
  {
   "slug": "eeg",
   "zh": "脑电图(EEG)",
-  "cat": "神经技术与方法",
+  "cat": "神经技术",
   "path": "original-hd/eeg.png"
  },
  {
   "slug": "meg",
   "zh": "脑磁图(MEG)",
-  "cat": "神经技术与方法",
+  "cat": "神经技术",
   "path": "original-hd/meg.png"
  },
  {
   "slug": "fmri",
   "zh": "功能磁共振(fMRI)",
-  "cat": "神经技术与方法",
+  "cat": "神经技术",
   "path": "original-hd/fmri.png"
  },
  {
   "slug": "pet",
   "zh": "正电子发射断层(PET)",
-  "cat": "神经技术与方法",
+  "cat": "神经技术",
   "path": "original-hd/pet.png"
  },
  {
   "slug": "tms",
   "zh": "经颅磁刺激(TMS)",
-  "cat": "神经技术与方法",
+  "cat": "神经技术",
   "path": "original-hd/tms.png"
  },
  {
   "slug": "tdcs",
   "zh": "经颅直流电刺激(tDCS)",
-  "cat": "神经技术与方法",
+  "cat": "神经技术",
   "path": "original-hd/tdcs.png"
  },
  {
   "slug": "fnirs",
   "zh": "近红外光谱(fNIRS)",
-  "cat": "神经技术与方法",
+  "cat": "神经技术",
   "path": "original-hd/fnirs.png"
  },
  {
   "slug": "single-cell",
   "zh": "单细胞记录",
-  "cat": "神经技术与方法",
+  "cat": "神经技术",
   "path": "original-hd/single-cell.png"
+ },
+ {
+  "slug": "structural-mri",
+  "zh": "脑结构影像(MRI)",
+  "cat": "神经技术",
+  "path": "original-hd/structural-mri.png"
  },
  {
   "slug": "assessment",
   "zh": "心理评估",
-  "cat": "神经技术与方法",
+  "cat": "测量与统计",
   "path": "original-hd/assessment.png"
  },
  {
   "slug": "measurement",
   "zh": "心理测量",
-  "cat": "神经技术与方法",
+  "cat": "测量与统计",
   "path": "original-hd/measurement.png"
  },
  {
   "slug": "cognitive-testing",
   "zh": "认知测评",
-  "cat": "神经技术与方法",
+  "cat": "测量与统计",
   "path": "original-hd/cognitive-testing.png"
  },
  {
   "slug": "scales",
   "zh": "量表",
-  "cat": "神经技术与方法",
+  "cat": "测量与统计",
   "path": "original-hd/scales.png"
  },
  {
   "slug": "data-analysis",
   "zh": "数据分析",
-  "cat": "神经技术与方法",
+  "cat": "测量与统计",
   "path": "original-hd/data-analysis.png"
- },
- {
-  "slug": "structural-mri",
-  "zh": "脑结构影像(MRI)",
-  "cat": "神经技术与方法",
-  "path": "original-hd/structural-mri.png"
  },
  {
   "slug": "cognition",
@@ -998,5 +998,41 @@
   "zh": "工作记忆",
   "cat": "认知与情绪",
   "path": "original-hd/working-memory.png"
+ },
+ {
+  "slug": "anova",
+  "zh": "方差分析",
+  "cat": "测量与统计",
+  "path": "original-hd/anova.png"
+ },
+ {
+  "slug": "clustering",
+  "zh": "聚类",
+  "cat": "测量与统计",
+  "path": "original-hd/clustering.png"
+ },
+ {
+  "slug": "correlation",
+  "zh": "相关",
+  "cat": "测量与统计",
+  "path": "original-hd/correlation.png"
+ },
+ {
+  "slug": "regression",
+  "zh": "回归",
+  "cat": "测量与统计",
+  "path": "original-hd/regression.png"
+ },
+ {
+  "slug": "least-squares",
+  "zh": "最小二乘法",
+  "cat": "测量与统计",
+  "path": "original-hd/least-squares.png"
+ },
+ {
+  "slug": "bayes",
+  "zh": "贝叶斯",
+  "cat": "测量与统计",
+  "path": "original-hd/bayes.png"
  }
 ]

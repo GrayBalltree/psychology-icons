@@ -96,12 +96,6 @@
   "path": "original-hd/brainwaves.png"
  },
  {
-  "slug": "topomap",
-  "zh": "脑地形图",
-  "cat": "神经科学",
-  "path": "original-hd/topomap.png"
- },
- {
   "slug": "reward",
   "zh": "奖赏系统(多巴胺通路)",
   "cat": "神经科学",
@@ -202,6 +196,12 @@
   "path": "original-hd/structural-mri.png"
  },
  {
+  "slug": "topomap",
+  "zh": "脑地形图",
+  "cat": "神经技术",
+  "path": "original-hd/topomap.png"
+ },
+ {
   "slug": "assessment",
   "zh": "心理评估",
   "cat": "测量与统计",
@@ -289,7 +289,19 @@
   "slug": "sadness",
   "zh": "悲伤",
   "cat": "认知与情绪",
-  "path": "original-hd/sadness.png"
+  "path": "original-hd/sadness-a.png",
+  "variants": [
+   {
+    "name": "撇嘴泪滴",
+    "path": "original-hd/sadness-a.png",
+    "color": "#2456a6"
+   },
+   {
+    "name": "雨云低垂",
+    "path": "original-hd/sadness-b.png",
+    "color": "#f26522"
+   }
+  ]
  },
  {
   "slug": "anger",
@@ -473,7 +485,7 @@
  },
  {
   "slug": "mbsr",
-  "zh": "正念疗法(MBSR)",
+  "zh": "正念减压(MBSR)",
   "cat": "心理健康与治疗",
   "path": "original-hd/mbsr.png"
  },
@@ -605,7 +617,7 @@
  },
  {
   "slug": "mindfulness",
-  "zh": "正念",
+  "zh": "正念疗法(Mindfulness)",
   "cat": "人格与社会",
   "path": "original-hd/mindfulness.png"
  },
@@ -1034,5 +1046,23 @@
   "zh": "贝叶斯",
   "cat": "测量与统计",
   "path": "original-hd/bayes.png"
+ },
+ {
+  "slug": "likert-scale",
+  "zh": "李克特量表1～5",
+  "cat": "测量与统计",
+  "path": "original-hd/likert-scale.png"
+ },
+ {
+  "slug": "joy",
+  "zh": "开心",
+  "cat": "认知与情绪",
+  "path": "original-hd/joy.png"
+ },
+ {
+  "slug": "embarrassment",
+  "zh": "尴尬",
+  "cat": "认知与情绪",
+  "path": "original-hd/embarrassment.png"
  }
 ]
